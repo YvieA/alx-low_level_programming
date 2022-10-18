@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * prints the lowercase alphabets a-z
- *
- * Description: print alphabets in lowercase
- * characters a-z followed by a new line
- * from the "main.h" file
- *
- * Return void (nothing)
- */
+  * print_alphabet - Prints a-z
+  *
+  * Description: This function prints
+  * characters from a-z followed by a newline
+  *
+  * Return: void (nothing)
+  */
 void print_alphabet(void)
 {
 	char ch;
