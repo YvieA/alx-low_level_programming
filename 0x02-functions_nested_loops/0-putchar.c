@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * main - print _putchar followed by a new line
- * Author: YvieA
- * Return: 0
+ * main - Prints _putchar
+ *
+ * Description: Using _putchar function
+ * from "main.h" file this prints _putchar to the stdout
+ *
+ * Return: 0 (success)
  */
-
-int _putchar(char c) {
+int main(void)
+{
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
