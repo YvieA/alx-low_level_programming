@@ -1,24 +1,22 @@
-#include <stdio.h>
-#include <stddef.h>
 #include "main.h"
 
 /**
- * print_chessboard - print a chess board
- *
- * @a: pointer to a multidimensional array
- *
+ * print_chessboard - prints the chessboard
+ * @a: input pointer.
+ * Return: no return.
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, j, size;
+	unsigned int i, m = 0;
 
-	size = 8;
-	for (i = 0; i < size; ++i)
+	for (i = 0; i < 64; i++)
 	{
-		for (j = 0; j < size; ++j)
+		if (i % 8 == 0 && i != 0)
 		{
-			printf("%c", a[i][j]);
+			m = i;
+			_putchar('\n');
 		}
-		printf("\n");
+		_putchar(a[i / 8][i - m]);
 	}
+	_putchar('\n');
 }
